@@ -1,0 +1,84 @@
+.appointment-form {
+  margin: 10px;
+  width: 660px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cen{
+  display: flex;
+  justify-content: center;
+  background-image: url('./images/calender.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 20px;
+}
+
+.marg{
+  margin-top: 100px;
+  margin-left: 50px;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.appointment-form button {
+  color: #fff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #007bff;
+  border-color: #007bff;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  border: 2px solid #479ffc;
+  padding: 5px;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.appointment-form button:hover {
+  color: #fff;
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.appointment-form .appointment {
+  width: 280px;
+  height: 40px;
+  border: 1.5px solid black;
+  border-radius: 5px;
+}
+.appointment-form .text {
+  border: 1.5px solid black;
+  border-radius: 5px;
+}
+
+.disp {
+  font-weight: bolder;
+  width: 20px;
+}
+
+.move {
+  width: 200px;
+  text-align: justify;
+}
+
+.doc {
+  text-align: left;
+}
+
+.padd{
+  padding: 30px;
+  
+}
+
+.mar{
+  margin-right: 40px;
+}

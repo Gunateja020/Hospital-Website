@@ -1,0 +1,49 @@
+.card-content {
+  color: #fff;
+  background-color: rgb(11, 40, 70);
+  border-color: #007bff;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  /* padding: 100px; */
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  font-size: 2rem;
+  line-height: 1.5;
+  width: 350px;
+  height: 100px;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  position: relative;
+}
+
+.card-content:hover {
+  color: black;
+  background-color: aliceblue;
+  border-color: #004085;
+}
+
+.service {
+  text-align: center;
+  font-size: 40px;
+}
+
+aside {
+  display: inline;
+  width: 10px;
+}
+
+.pad {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.card-content p small {
+  color: #059bcdbd;
+  font-size: 20px;
+  bottom: 0;
+  left: 0;
+}

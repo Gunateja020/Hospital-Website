@@ -1,0 +1,32 @@
+.size{
+    font-size: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.block{
+    background-color: rgb(11, 40, 70);
+    margin: 50px;
+    color: white;
+}
+
+.name{
+    font-size: 20px;
+}
+
+.book{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 25px;
+    border:1px solid white ;
+}
+
+.book:hover{
+    text-decoration: none;
+    background-color: aliceblue;
+    color: black;
+}

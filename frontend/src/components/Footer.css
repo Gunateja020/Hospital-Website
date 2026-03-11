@@ -1,0 +1,39 @@
+.footer {
+    background-color: black;
+    color: whitesmoke;
+    width: 100%;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+}
+
+.links:hover {
+    color: #928e85;
+    text-decoration: none;
+}
+
+.ficon {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.ficon:hover {
+    opacity: 0.7;
+    text-decoration: none;
+    color: gray;
+}
+
+
+.center {
+    text-align: center;
+}
+
+.padd {
+    padding-top: 30px;
+}
