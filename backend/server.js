@@ -1,0 +1,43 @@
+const mongoose=require('mongoose')
+const express=require('express')
+const cors=require('cors')
+const registerRoute=require('./routes/RegisterRoute.js')
+const loginRoute = require('./routes/LoginRoute.js')
+const appointmentRoute = require('./routes/AppointmentRoute.js')
+const DonationRoute = require('./routes/DonationRoute.js')
+const GetDoctorsRoute= require("./routes/GetDoctorsRoute.js")
+const ContactRoute = require('./routes/ContactRoute.js')
+const DocappRoute = require('./routes/DocaappRoute.js')
+const DocdonRoute = require('./routes/DocdonRoute.js')
+const UpdatestatusRoute = require('./routes/UpdatestatusRoute.js')
+const CancelstatusRoute = require('./routes/CancelstatusRoute.js')
+const PrescriptionRoute = require('./routes/PrescriptionRoute.js')
+const DonupdateRoute = require('./routes/DonupdateRoute.js')
+const DondeleteRoute = require('./routes/DondeleteRoute.js')
+
+const app=express()
+app.use(express.json())
+app.use(cors())
+mongoose.connect("mongodb://127.0.0.1:27017/HospitalDatabase").then(()=>{
+    console.log("database connected")
+})
+
+app.use('/',registerRoute)
+app.use('/',appointmentRoute)
+app.use('/',loginRoute)
+app.use("/",DonationRoute)
+app.use("/",GetDoctorsRoute)
+app.use("/",ContactRoute)
+app.use("/",DocappRoute)
+app.use("/",DocdonRoute)
+app.use("/", UpdatestatusRoute)
+app.use("/",CancelstatusRoute)
+app.use("/",PrescriptionRoute)
+app.use("/",DonupdateRoute)
+app.use("/",DondeleteRoute)
+
+
+
+app.listen(5000,()=>{
+    console.log('server connected')
+})
